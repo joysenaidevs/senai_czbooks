@@ -56,7 +56,7 @@ namespace senai_CZBooks_webApi.Repositories
         /// </summary>
         /// <param name="id">objeto que será buscado</param>
         /// <returns>retorna o usuario buscado através </returns>
-        public Usuario BuscarPorId(int id)
+        public Usuario Login(int id)
         {
             return ctx.Usuarios
               .Include(u => u.IdTipoUsuarioNavigation)
@@ -95,7 +95,7 @@ namespace senai_CZBooks_webApi.Repositories
         public void Deletar(int id)
         {
             // Remove o tipo de usuário que foi buscado
-            ctx.Usuarios.Remove(BuscarPorId(id));
+            ctx.Usuarios.Remove(Login(id));
 
             // Salva as alterações
             ctx.SaveChanges();
@@ -135,6 +135,26 @@ namespace senai_CZBooks_webApi.Repositories
         {
             // Retorna o usuário encontrado através do e-mail e da senha
             return ctx.Usuarios.FirstOrDefault(u => u.Email == email && u.Senha == senha);
+        }
+
+        /// <summary>
+        /// Busca um autor através do seu id
+        /// </summary>
+        /// <param name="id">retorna o id do autor</param>
+        /// <returns>retorna o autor buscado</returns>
+        public Autor BuscarAutorId(int id)
+        {
+            return ctx.Autors.FirstOrDefault(a => a.IdUsuario == id);
+        }
+
+        /// <summary>
+        /// busca um cliente através do seu id
+        /// </summary>
+        /// <param name="id">retorna o id do cliente</param>
+        /// <returns>retorna o cliente buscado</returns>
+        public Usuario BuscarClienteId(int id)
+        {
+            return ctx.Usuarios.FirstOrDefault(u => u.IdTipoUsuario == id);
         }
     }
 }

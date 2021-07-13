@@ -84,7 +84,7 @@ namespace senai_CZBooks_webApi
                         IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("czbook-chave-autenticacao")),
 
                         // Valida o tempo de expira��o do token
-                        ClockSkew = TimeSpan.FromMinutes(30),
+                        ClockSkew = TimeSpan.FromMinutes(50),
 
                         // Nome do issuer, de onde est� vindo
                         ValidIssuer = "CZBook.webApi",
@@ -115,12 +115,12 @@ namespace senai_CZBooks_webApi
                 c.RoutePrefix = string.Empty;
             });
 
+
+
             app.UseRouting();
 
             // Habilita a autentica��o
             app.UseAuthentication();
-
-            app.UseRouting();
 
             app.UseAuthorization();
 
@@ -130,10 +130,8 @@ namespace senai_CZBooks_webApi
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello World!");
-                });
+                // define o mapeamento dos controllers
+                endpoints.MapControllers();
             });
         }
     }

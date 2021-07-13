@@ -65,3 +65,13 @@ C:\Users\Neide\Desktop\senai_czbooks\Sprint 2 - Beck End\senai_CZBooks_webApi\se
 C:\Users\Neide\Desktop\senai_czbooks\Sprint 2 - Beck End\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\ref\senai_CZBooks_webApi.dll
 C:\Users\Neide\Desktop\senai_czbooks\Sprint 2 - Beck End\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\senai_CZBooks_webApi.pdb
 C:\Users\Neide\Desktop\senai_czbooks\Sprint 2 - Beck End\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\senai_CZBooks_webApi.genruntimeconfig.cache
+C:\Users\52391129831\Documents\senai_czbooks\Sprint 2 - Beck End\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\senai_CZBooks_webApi.csproj.AssemblyReference.cache
+C:\Users\52391129831\Documents\senai_czbooks\Sprint 2 - Beck End\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\senai_CZBooks_webApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\52391129831\Documents\senai_czbooks\Sprint 2 - Beck End\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\senai_CZBooks_webApi.AssemblyInfoInputs.cache
+C:\Users\52391129831\Documents\senai_czbooks\Sprint 2 - Beck End\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\senai_CZBooks_webApi.AssemblyInfo.cs
+C:\Users\52391129831\Documents\senai_czbooks\Sprint 2 - Beck End\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\senai_CZBooks_webApi.csproj.CoreCompileInputs.cache
+C:\Users\52391129831\Documents\senai_czbooks\Sprint 2 - Beck End\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\senai_CZBooks_webApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\52391129831\Documents\senai_czbooks\Sprint 2 - Beck End\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\senai_CZBooks_webApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\52391129831\Documents\senai_czbooks\Sprint 2 - Beck End\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\senai_CZBooks_webApi.dll
+C:\Users\52391129831\Documents\senai_czbooks\Sprint 2 - Beck End\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\ref\senai_CZBooks_webApi.dll
+C:\Users\52391129831\Documents\senai_czbooks\Sprint 2 - Beck End\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\senai_CZBooks_webApi.pdb

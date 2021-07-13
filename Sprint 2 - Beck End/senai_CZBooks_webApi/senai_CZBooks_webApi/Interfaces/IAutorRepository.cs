@@ -40,5 +40,12 @@ namespace senai_CZBooks_webApi.Interfaces
         /// </summary>
         /// <param name="id">objeto que será deletado</param>
         void Deletar(int id);
+
+        /// <summary>
+        /// Lista todos os livros de um determinado usuario
+        /// </summary>
+        /// <param name="id">id do livro que será listado</param>
+        /// <returns>retorna a lista de livros</returns>
+        List<Autor> ListarMeus(int id);
     }
 }
