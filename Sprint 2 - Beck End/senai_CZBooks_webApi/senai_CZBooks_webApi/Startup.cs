@@ -111,13 +111,12 @@ namespace senai_CZBooks_webApi
             // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Gufi.webApi");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "senai_CZBooks_webApi");
                 c.RoutePrefix = string.Empty;
             });
 
 
 
-            app.UseRouting();
 
             // Habilita a autentica��o
             app.UseAuthentication();
@@ -128,6 +127,7 @@ namespace senai_CZBooks_webApi
             app.UseCors("CorsPolicy");
 
 
+            app.UseRouting();
             app.UseEndpoints(endpoints =>
             {
                 // define o mapeamento dos controllers

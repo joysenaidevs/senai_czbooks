@@ -26,12 +26,12 @@ namespace senai_CZBooks_webApi.Controllers
     {
 
         /// <summary>
-        /// Objeto _usuarioRepository que irá receber todos os métodos definidos na interface IAutorRepository
+        /// Objeto _livroRepository que irá receber todos os métodos definidos na interface ILivroRepository
         /// </summary>
         private ILivroRepository _livroRepository { get; set; }
 
         /// <summary>
-        /// Instancia o objeto _autorRepository para que haja a referência aos métodos no repositório
+        /// Instancia o objeto _livroRepository para que haja a referência aos métodos no repositório
         /// </summary>
         public LivrosController()
         {
