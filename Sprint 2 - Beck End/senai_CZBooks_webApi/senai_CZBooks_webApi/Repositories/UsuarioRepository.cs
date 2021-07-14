@@ -56,7 +56,7 @@ namespace senai_CZBooks_webApi.Repositories
         /// </summary>
         /// <param name="id">objeto que será buscado</param>
         /// <returns>retorna o usuario buscado através </returns>
-        public Usuario Login(int id)
+        public Usuario BuscarPorId(int id)
         {
             return ctx.Usuarios
               .Include(u => u.IdTipoUsuarioNavigation)
@@ -95,7 +95,7 @@ namespace senai_CZBooks_webApi.Repositories
         public void Deletar(int id)
         {
             // Remove o tipo de usuário que foi buscado
-            ctx.Usuarios.Remove(Login(id));
+            ctx.Usuarios.Remove(BuscarPorId(id));
 
             // Salva as alterações
             ctx.SaveChanges();

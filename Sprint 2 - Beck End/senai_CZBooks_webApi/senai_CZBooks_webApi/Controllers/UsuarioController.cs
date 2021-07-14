@@ -57,6 +57,7 @@ namespace senai_CZBooks_webApi.Controllers
             }
         }
 
+
         /// <summary>
         /// Busca um usuário pelo seu id
         /// </summary>
@@ -68,7 +69,7 @@ namespace senai_CZBooks_webApi.Controllers
         {
             try
             {
-                return Ok(_usuarioRepository.Login(id));
+                return Ok(_usuarioRepository.BuscarPorId(id));
 
 
             }

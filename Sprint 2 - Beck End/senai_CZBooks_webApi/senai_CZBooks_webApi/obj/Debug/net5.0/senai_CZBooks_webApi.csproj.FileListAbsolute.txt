@@ -142,3 +142,5 @@ C:\Users\User\Desktop\senai_czbooks\Sprint 2 - Beck End\senai_CZBooks_webApi\sen
 C:\Users\User\Desktop\senai_czbooks\Sprint 2 - Beck End\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\ref\senai_CZBooks_webApi.dll
 C:\Users\User\Desktop\senai_czbooks\Sprint 2 - Beck End\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\senai_CZBooks_webApi.pdb
 C:\Users\User\Desktop\senai_czbooks\Sprint 2 - Beck End\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\senai_CZBooks_webApi.genruntimeconfig.cache
+C:\Users\Neide\Desktop\senai_czbooks\Sprint 2 - Beck End\senai_CZBooks_webApi\senai_CZBooks_webApi\bin\Debug\net5.0\senai_CZBooks_webApi.xml
+C:\Users\Neide\Desktop\senai_czbooks\Sprint 2 - Beck End\senai_CZBooks_webApi\senai_CZBooks_webApi\obj\Debug\net5.0\senai_CZBooks_webApi.xml

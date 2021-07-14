@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using senai_CZBooks_webApi.Domains;
 using senai_CZBooks_webApi.Interfaces;
 using senai_CZBooks_webApi.Repositories;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -50,6 +52,20 @@ namespace senai_CZBooks_webApi.Controllers
             catch (Exception erro)
             {
                 // retorna uma status code 400
+                return BadRequest(erro);
+            }
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetById(int id)
+        {
+            try
+            {
+                // Retora a resposta da requisição fazendo a chamada para o método
+                return Ok(_autorRepository.BuscarPorId(id));
+            }
+            catch (Exception erro)
+            {
                 return BadRequest(erro);
             }
         }
@@ -122,6 +138,35 @@ namespace senai_CZBooks_webApi.Controllers
             {
                 // retorna um erro 400
                 return BadRequest(erro);
+            }
+        }
+
+        /// <summary>
+        /// Lista todos os livros de um determinado usuário
+        /// </summary>
+        /// <returns>Uma lista de presenças e um status code 200 - Ok</returns>
+        /// dominio/api/autor/minhas
+        // Define que somente o usuário autor  pode acessar o método
+        [Authorize(Roles = "3")]
+        [HttpGet("minhas")]
+        public IActionResult GetMy()
+        {
+            try
+            {
+                // Cria uma variável idUsuario que recebe o valor do ID do usuário que está logado
+                int idUsuario = Convert.ToInt32(HttpContext.User.Claims.First(c => c.Type == JwtRegisteredClaimNames.Jti).Value);
+
+                // Retora a resposta da requisição 200 - OK fazendo a chamada para o método e trazendo a lista
+                return Ok(_autorRepository.ListarMeus(idUsuario));
+            }
+            catch (Exception error)
+            {
+                // Retorna a resposta da requisição 400 - Bad Request e o erro ocorrido
+                return BadRequest(new
+                {
+                    mensagem = "Não é possível mostrar os livros se o usuário não estiver logado!",
+                    error
+                });
             }
         }
 

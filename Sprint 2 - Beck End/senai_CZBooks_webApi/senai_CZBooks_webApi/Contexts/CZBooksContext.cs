@@ -32,10 +32,10 @@ namespace senai_CZBooks_webApi.Contexts
 //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
 
                 // string de conexao NEIDE
-                //optionsBuilder.UseSqlServer("Data Source=WINDOWS\\SQLEXPRESS; initial catalog=CZBooks; user Id=sa; pwd=adm@132;");
+                optionsBuilder.UseSqlServer("Data Source=WINDOWS\\SQLEXPRESS; initial catalog=CZBooks; user Id=sa; pwd=adm@132;");
 
                 // string de conexao SENAI
-                optionsBuilder.UseSqlServer("Data Source=LAB08DESK2601\\SQLEXPRESS01; initial catalog=CZBooks; integrated security=true");
+                //optionsBuilder.UseSqlServer("Data Source=LAB08DESK2601\\SQLEXPRESS01; initial catalog=CZBooks; integrated security=true");
             }
         }
 

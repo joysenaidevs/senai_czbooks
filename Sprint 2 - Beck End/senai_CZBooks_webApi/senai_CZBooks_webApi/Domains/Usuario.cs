@@ -22,7 +22,7 @@ namespace senai_CZBooks_webApi.Domains
 
 
         [Required(ErrorMessage = "Informe a senha do usuário!")]
-        [StringLength(9, MinimumLength = 4, ErrorMessage = "Ao Cadastrar um usuario, a senha deverá ter de 3 a 6 caracteres")]
+        [StringLength(9, MinimumLength = 4, ErrorMessage = "Ao Cadastrar um usuario, a senha deverá ter de 4 a 9 caracteres")]
         public string Senha { get; set; }
 
         public virtual TiposUsuario IdTipoUsuarioNavigation { get; set; }

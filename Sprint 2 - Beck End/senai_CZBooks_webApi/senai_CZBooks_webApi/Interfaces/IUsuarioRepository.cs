@@ -19,7 +19,7 @@ namespace senai_CZBooks_webApi.Interfaces
         /// </summary>
         /// <param name="id">ID do usuário que será buscado</param>
         /// <returns>Um usuário buscado</returns>
-        Usuario Login(int id);
+        Usuario BuscarPorId(int id);
 
         /// <summary>
         /// Cadastra um novo usuário

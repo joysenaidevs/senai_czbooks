@@ -109,7 +109,7 @@ namespace senai_CZBooks_webApi.Controllers
         /// <param name="id">id que será atualizado</param>
         /// <param name="livroUpdate">objeto que será atualizado</param>
         /// <returns>retorna um status code 204</returns>
-        [HttpPut]
+        [HttpPut("{id}")]
         public IActionResult Put(int id, Livro livroUpdate)
         {
             try

@@ -116,18 +116,17 @@ namespace senai_CZBooks_webApi
             });
 
 
-
+            app.UseRouting();
 
             // Habilita a autentica��o
             app.UseAuthentication();
 
+            // Habilita a autoriza��o
             app.UseAuthorization();
 
             // Define o uso de CORS
             app.UseCors("CorsPolicy");
 
-
-            app.UseRouting();
             app.UseEndpoints(endpoints =>
             {
                 // define o mapeamento dos controllers
