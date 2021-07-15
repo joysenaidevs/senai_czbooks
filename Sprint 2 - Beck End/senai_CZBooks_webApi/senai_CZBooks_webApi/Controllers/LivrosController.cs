@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using senai_CZBooks_webApi.Domains;
 using senai_CZBooks_webApi.Interfaces;
@@ -84,6 +85,8 @@ namespace senai_CZBooks_webApi.Controllers
         /// </summary>
         /// <param name="novoLivro">objeto q será cadastrado</param>
         /// <returns>retorna um status code 201</returns>
+
+        [Authorize(Roles = "1")]
         [HttpPost]
         public IActionResult Post(Livro novoLivro)
         {

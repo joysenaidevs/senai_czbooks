@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using senai_CZBooks_webApi.Domains;
 using senai_CZBooks_webApi.Interfaces;
@@ -83,6 +84,8 @@ namespace senai_CZBooks_webApi.Controllers
         /// </summary>
         /// <param name="novaBiblioteca">objeto que seraá cadastrado</param>
         /// <returns>stauts code 200</returns>
+
+        [Authorize(Roles = "1")]
         [HttpPost]
         public IActionResult Post(Biblioteca  novaBiblioteca)
         {

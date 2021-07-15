@@ -531,6 +531,12 @@
             Objeto contexto que sera chamado ao EF Core
             </summary>
         </member>
+        <member name="M:senai_CZBooks_webApi.Repositories.TipoLivroRepository.Listar">
+            <summary>
+            Lista todos os tipos de livros
+            </summary>
+            <returns>retorna todos os tipos de livros</returns>
+        </member>
         <member name="M:senai_CZBooks_webApi.Repositories.TipoLivroRepository.Atualizar(System.Int32,senai_CZBooks_webApi.Domains.TipoLivro)">
             <summary>
             Atualiza um tipo de livro existente
@@ -556,12 +562,6 @@
             deleta um  tipo de usuario
             </summary>
             <param name="id">id do tipo usuario de será deletado</param>
-        </member>
-        <member name="M:senai_CZBooks_webApi.Repositories.TipoLivroRepository.Listar">
-            <summary>
-            lista todos os tipos usuarios
-            </summary>
-            <returns>retorna uma lista de tipos usuarios</returns>
         </member>
         <member name="T:senai_CZBooks_webApi.Repositories.TipoUsuarioRepository">
             <summary>

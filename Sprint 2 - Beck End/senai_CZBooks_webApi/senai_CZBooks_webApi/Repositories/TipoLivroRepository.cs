@@ -1,4 +1,5 @@
-﻿using senai_CZBooks_webApi.Contexts;
+﻿using Microsoft.AspNetCore.Mvc;
+using senai_CZBooks_webApi.Contexts;
 using senai_CZBooks_webApi.Domains;
 using senai_CZBooks_webApi.Interfaces;
 using System;
@@ -14,6 +15,16 @@ namespace senai_CZBooks_webApi.Repositories
         /// Objeto contexto que sera chamado ao EF Core
         /// </summary>
         CZBooksContext ctx = new CZBooksContext();
+
+
+        /// <summary>
+        /// Lista todos os tipos de livros
+        /// </summary>
+        /// <returns>retorna todos os tipos de livros</returns>
+        public List<TipoLivro> Listar()
+        {
+            return ctx.TipoLivros.ToList();
+        }
 
         /// <summary>
         /// Atualiza um tipo de livro existente
@@ -79,14 +90,6 @@ namespace senai_CZBooks_webApi.Repositories
             ctx.SaveChanges();
         }
 
-        /// <summary>
-        /// lista todos os tipos usuarios
-        /// </summary>
-        /// <returns>retorna uma lista de tipos usuarios</returns>
-        public List<TipoLivro> Listar()
-        {
-            // retorna uma lista de autores
-            return ctx.TipoLivros.ToList();
-        }
+       
     }
 }

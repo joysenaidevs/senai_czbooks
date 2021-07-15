@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using senai_CZBooks_webApi.Domains;
 using senai_CZBooks_webApi.Interfaces;
@@ -83,6 +84,7 @@ namespace senai_CZBooks_webApi.Controllers
         /// <param name="novoTipoLivro">objet que sera cadastrado</param>
         /// <returns>retorna um status code 201</returns>
         [HttpPost]
+        [Authorize(Roles = "1")]
         public IActionResult Post(TipoLivro  novoTipoLivro)
         {
             // tratamento de excessao
@@ -107,7 +109,7 @@ namespace senai_CZBooks_webApi.Controllers
         /// <param name="id">id do tipo de livro atualizado</param>
         /// <param name="tipoLivroUpdate">objeto que sera atualizado</param>
         /// <returns>retorna um status code 204</returns>
-        [HttpPut]
+        [HttpPut("{id}")]
         public IActionResult Put(int id, TipoLivro tipoLivroUpdate)
         {
             try

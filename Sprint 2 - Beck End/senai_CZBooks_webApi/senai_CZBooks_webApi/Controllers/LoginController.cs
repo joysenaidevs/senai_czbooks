@@ -103,26 +103,43 @@ namespace senai_CZBooks_webApi.Controllers
                 // define os dados que serao fornecidos no Token - Payload
                 var claim = new[]
                 {
+                     // Armazena na Claim o e-mail do usuário autenticado
+                    new Claim(JwtRegisteredClaimNames.Email, usuarioBuscado.Email),
+
+                    // Armazena na Claim o ID do usuário autenticado
+                    new Claim(JwtRegisteredClaimNames.Jti, usuarioBuscado.IdUsuario.ToString()),
+
+                    // Armazena na Claim o tipo de usuário que foi autenticado (Administrador ou Comum)
+                    new Claim(ClaimTypes.Role, usuarioBuscado.IdTipoUsuario.ToString()),
+
+                    // Armazena na Claim o tipo de usuário que foi autenticado (Administrador ou Comum) de forma personalizada
+                    new Claim("role", usuarioBuscado.IdTipoUsuario.ToString()),
+
+                    // Armazena na Claim o nome do usuário que foi autenticado
+                    new Claim(JwtRegisteredClaimNames.Name, usuarioBuscado.NomeUsuario)
+
+
+
                     //     criando uma nova claim para armazenar o email do usuario
                     //     PEGANDO O Email do usuario buscado do banco de dados atraves do email e da senha
                    // e esta sendo armazenado na primeira claim
-                    new Claim(JwtRegisteredClaimNames.Email, usuarioBuscado.Email),
+                    //new Claim(JwtRegisteredClaimNames.Email, usuarioBuscado.Email),
 
-                    // armazena na claim o id do usuario autenticado
-                    new Claim(JwtRegisteredClaimNames.Jti, usuarioBuscado.IdUsuario.ToString()),
+                    //// armazena na claim o id do usuario autenticado
+                    //new Claim(JwtRegisteredClaimNames.Jti, usuarioBuscado.IdUsuario.ToString()),
 
-                    // armazenando o idTipoUsuario ex: 1
-                    new Claim(ClaimTypes.Role, usuarioBuscado.IdTipoUsuario.ToString()),
+                    //// armazenando o idTipoUsuario ex: 1
+                    //new Claim(ClaimTypes.Role, usuarioBuscado.IdTipoUsuario.ToString()),
 
-                      // Armazena na Claim o tipo de usuário que foi autenticado (Administrador ou Comum) de forma personalizada
-                    new Claim("role", usuarioBuscado.IdTipoUsuario.ToString()),
+                    //  // Armazena na Claim o tipo de usuário que foi autenticado (Administrador ou Comum) de forma personalizada
+                    //new Claim("role", usuarioBuscado.IdTipoUsuario.ToString()),
 
                     // Armazena na Claim o nome do usuário que foi autenticado
                    // new Claim(JwtRegisteredClaimNames.Name, usuarioBuscado.NomeUsuario),
 
-                   new Claim("NomeAutor", usuarioBuscado.IdTipoUsuario == 2 ? $"{autorLogin.NomeAutor}" : "" ),
+                   //new Claim("NomeAutor", usuarioBuscado.IdTipoUsuario == 2 ? $"{autorLogin.IdUsuario}" : "" ),
 
-                    new Claim("NomeCliente", usuarioBuscado.IdTipoUsuario == 3 ? $"{usuarioBuscado.IdTipoUsuarioNavigation}" : "" )
+                   //new Claim("NomeCliente", usuarioBuscado.IdTipoUsuario == 3 ? $"{usuarioBuscado.IdTipoUsuario}" : "" )
                 };
 
                 // define o acesso ao token     gerando a chave

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using senai_CZBooks_webApi.Domains;
 using senai_CZBooks_webApi.Interfaces;
@@ -22,6 +23,8 @@ namespace senai_CZBooks_webApi.Controllers
 
     //define que será um controlador api
     [ApiController]
+
+    [Authorize(Roles = "1")]
     public class TipoUsuarioController : ControllerBase
     {
         /// <summary>
