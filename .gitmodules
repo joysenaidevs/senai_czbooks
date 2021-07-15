@@ -1,0 +1,3 @@
+[submodule "senai_czbooks"]
+	path = senai_czbooks
+	url = https://github.com/joysenaidevs/senai_czbooks.git
