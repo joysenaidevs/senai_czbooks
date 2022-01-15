@@ -6,3 +6,5 @@ build_property.ProjectTypeGuids =
 build_property.PublishSingleFile = 
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
+build_property.RootNamespace = senai_CZBooks_webApi
+build_property.ProjectDir = C:\Users\Joyce\Desktop\senai_czbooks\Sprint 2 - Beck End\senai_CZBooks_webApi\senai_CZBooks_webApi\

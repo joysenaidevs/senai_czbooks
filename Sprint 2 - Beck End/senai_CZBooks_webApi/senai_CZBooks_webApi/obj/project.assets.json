@@ -7541,19 +7541,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\52391129831\\.nuget\\packages\\": {}
+    "C:\\Users\\Joyce\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\52391129831\\Desktop\\senai_czbooks\\Sprint 2 - Beck End\\senai_CZBooks_webApi\\senai_CZBooks_webApi\\senai_CZBooks_webApi.csproj",
+      "projectUniqueName": "C:\\Users\\Joyce\\Desktop\\senai_czbooks\\Sprint 2 - Beck End\\senai_CZBooks_webApi\\senai_CZBooks_webApi\\senai_CZBooks_webApi.csproj",
       "projectName": "senai_CZBooks_webApi",
-      "projectPath": "C:\\Users\\52391129831\\Desktop\\senai_czbooks\\Sprint 2 - Beck End\\senai_CZBooks_webApi\\senai_CZBooks_webApi\\senai_CZBooks_webApi.csproj",
-      "packagesPath": "C:\\Users\\52391129831\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\52391129831\\Desktop\\senai_czbooks\\Sprint 2 - Beck End\\senai_CZBooks_webApi\\senai_CZBooks_webApi\\obj\\",
+      "projectPath": "C:\\Users\\Joyce\\Desktop\\senai_czbooks\\Sprint 2 - Beck End\\senai_CZBooks_webApi\\senai_CZBooks_webApi\\senai_CZBooks_webApi.csproj",
+      "packagesPath": "C:\\Users\\Joyce\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Joyce\\Desktop\\senai_czbooks\\Sprint 2 - Beck End\\senai_CZBooks_webApi\\senai_CZBooks_webApi\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\52391129831\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Joyce\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7658,7 +7663,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }
